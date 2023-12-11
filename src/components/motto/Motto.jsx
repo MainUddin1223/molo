@@ -4,10 +4,12 @@ import inverted_2 from "../../assets/inverted-comma-2.png";
 
 const Motto = () => {
   return (
-    <div className="w-[80%] mx-auto my-16">
-      <div className="grid grid-cols-2">
-        <img src={motto_img} alt="motto_img" className="max-w-[400px] " />
-        <div className="flex flex-col justify-center align-middle text-center">
+    <div className="w-[95%] lg:w-[80%] mx-auto my-16">
+      <div className="flex flex-col-reverse lg:flex-row">
+        <div className="flex-1 ">
+          <img src={motto_img} alt="motto_img" className="lg:max-w-[400px] " />
+        </div>
+        <div className="flex flex-1 flex-col justify-center align-middle text-center">
           <img
             src={inverted_1}
             alt="inverted_comma"

@@ -1,6 +1,6 @@
 const Map = () => {
   return (
-    <div className="w-[80%] mx-auto">
+    <div className="lg:w-[80%] w-[95%] mx-auto">
       <h1 className="text-center my-16 text-5xl font-semibold text-[#ef98b3]">
         FIND US
       </h1>

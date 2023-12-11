@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <div className="bg-[#ef98b3]">
-      <div className="w-[80%] mx-auto mt-8 text-xl">
+      <div className="lg:w-[80%] w-[95%] mx-auto mt-8 text-md md:text-xl">
         <div className="flex justify-between py-4">
           <p>&copy; Molo Elephant & Castle</p>
           <p>
