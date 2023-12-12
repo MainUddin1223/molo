@@ -1,6 +1,13 @@
 import { MdLocationPin, MdOutlineEmail } from "react-icons/md";
 import { FaPhone, FaVanShuttle } from "react-icons/fa6";
+import { useEffect } from "react";
 const About = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <div className="w-[90%] lg:w-[80%]  mx-auto my-16">
       <div className="flex flex-col lg:flex-row items-center gap-4">

@@ -1,8 +1,14 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { lunch1, lunch2 } from "../../utils/menu";
 
 const Menu = () => {
   const [menu, setMenu] = useState("lunch");
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <div className="lg:w-[80%] mx-auto my-8 w-[90%] min-h-screen">
       <h1 className="text-center my-2 text-5xl font-semibold text-[#ef98b3]">

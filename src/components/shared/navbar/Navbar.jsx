@@ -1,13 +1,14 @@
 import { Link, NavLink, useLocation } from "react-router-dom";
 import logo from "../../../assets/molo-logo.png";
 import ham_menu from "../../../assets/hamburger.png";
-import { useState } from "react";
 import { FaInstagram } from "react-icons/fa";
 import { AiOutlineFacebook } from "react-icons/ai";
+import { useState } from "react";
 
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(false);
   const { pathname } = useLocation();
+
   return (
     <>
       <header className=" mx-auto  sticky top-0 z-[9999] bg-[#ef98b3] shadow-lg shadow-[rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset]">
@@ -24,7 +25,9 @@ const Navbar = () => {
           </ul>
           <div className="flex justify-center">
             {" "}
-            <img src={logo} alt="" className="w-64" />
+            <NavLink to={"/"}>
+              <img src={logo} alt="" className="w-64" />
+            </NavLink>
           </div>
           <ul className="flex justify-end items-center text-2xl">
             <NavLink className={"pe-5"} to={"/menu"}>
@@ -52,7 +55,9 @@ const Navbar = () => {
         </nav>
         <div className="flex justify-between items-center lg:hidden mx-auto w-[90%] ">
           {" "}
-          <img src={logo} alt="" className="ml-[-30px] w-48" />
+          <NavLink to="/" className="w-48">
+            <img src={logo} alt="" className="ml-[-30px] w-48" />
+          </NavLink>
           <img
             onClick={() => setDropdown(!dropdown)}
             src={ham_menu}

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import HomeSLider from "../HomeSlider/HomeSLider";
 import Map from "../Map/Map";
 import Gallery from "../gallery/Gallery";
@@ -5,6 +6,12 @@ import Motto from "../motto/Motto";
 import Service from "../services/Service";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <div>
       <div className="mx-auto relative">
