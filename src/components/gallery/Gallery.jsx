@@ -12,7 +12,7 @@ import { gallery5 } from "../../utils/gallery";
 import { gallery6 } from "../../utils/gallery";
 const Gallery = () => {
   return (
-    <div className="lg:w-[80%] mx-auto my-32 w-[95%]">
+    <div className="lg:w-[80%] mx-auto my-32 w-[90%]">
       <h1 className="text-center my-16 text-5xl font-semibold text-[#ef98b3]">
         OUR GALLERY
       </h1>

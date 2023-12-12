@@ -4,7 +4,7 @@ import inverted_2 from "../../assets/inverted-comma-2.png";
 
 const Motto = () => {
   return (
-    <div className="w-[95%] lg:w-[80%] mx-auto my-16">
+    <div className="w-[90%] lg:w-[80%] mx-auto my-16">
       <div className="flex flex-col-reverse lg:flex-row">
         <div className="flex-1 ">
           <img src={motto_img} alt="motto_img" className="lg:max-w-[400px] " />
@@ -23,7 +23,7 @@ const Motto = () => {
           <img
             src={inverted_2}
             alt="inverted_comma"
-            className="w-12 mx-auto mt-8"
+            className="w-12 mx-auto my-8 lg:mt-8"
           />
         </div>
       </div>
