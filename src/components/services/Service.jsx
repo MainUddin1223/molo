@@ -30,7 +30,7 @@ const Service = () => {
             <p className="text-3xl font-bold">DINNER</p>
           </div>
         </div>
-        <div className="flex justify-center sm:block py-4 px-8 my-4 sm:my-0 bg-[#ef98b441] w-[100%] sm:text-center">
+        <div className="flex justify-center sm:block py-4 px-8 my-2 sm:my-0 bg-[#ef98b441] w-[100%] sm:text-center">
           <div className="flex items-center sm:block gap-4">
             <img
               src={available}

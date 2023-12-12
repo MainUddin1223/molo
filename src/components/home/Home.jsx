@@ -20,8 +20,8 @@ const Home = () => {
           </h1>
         </a>
       </div>
-      <Service />
       <Motto />
+      <Service />
       <Gallery />
       <Map />
     </div>
